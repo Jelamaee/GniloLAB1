@@ -1,0 +1,156 @@
+body {
+  background-color: #FFFFFF;
+  color: #0a0a0a;
+  font-family: 'Open Sans', sans-serif; }
+
+i.fa {
+  margin-right: 8px; }
+  i.fa.right {
+    margin-left: 8px;
+    margin-right: 0; }
+
+.title {
+  font-family: 'Bree Serif', serif;
+  font-size: 14px;
+  text-align: center; }
+  .title.huge {
+    font-size: 42px; }
+  .title.medium {
+    font-size: 28px; }
+  .title.small {
+    font-size: 18px; }
+  @media (max-width: 767px) {
+    .title.huge {
+      font-size: 26px; }
+    .title.medium {
+      font-size: 22px; }
+    .title.small {
+      font-size: 16px; } }
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6A9C89;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  }
+
+/* Navbar brand/title */
+.navbar .brand {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  }
+
+/* Navbar links */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  }
+
+.navbar ul li {
+  margin-left: 10px;
+  }
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+  }
+
+.navbar ul li a:hover {
+  background-color: #677D6A;
+  border-radius: 4px;
+  }
+
+.navbar .menu-icon {
+  display: none;
+  cursor: pointer;
+  margin-right: auto;
+  position: fixed;
+  }
+
+.navbar .menu-icon div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  margin-right: auto;
+  }
+
+@media (max-width: 768px) {
+.navbar ul {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  margin-right: auto;
+  }
+
+.navbar ul.responsive {
+  display: flex;
+  margin-right: auto;
+  }
+
+.navbar ul li {
+  margin: 10px 0;
+  text-align: left;
+  width: 100%;
+  margin-right: auto;
+  }
+
+.navbar .menu-icon {
+  display: block;
+  margin-right: auto;
+  }}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .hero .title {
+    text-transform: capitalize;
+    line-height: 1.2;
+    text-align: left; }
+  .hero .description {
+    margin: 20px 0 20px 0; }
+  .hero img {
+    border-radius: 10%;
+  }
+
+/* Brief History */
+.history {
+    text-align: center;
+}
+
+/* Travels */
+.travels {
+  padding: 30px 0 60px 0; }
+  .travels .title {
+    margin-bottom: 30px; }
+  .travels .swiper-container {
+    width: 100%;
+    height: 100%; }
+  .travels .swiper-slide {
+    text-align: center;
+    margin-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .travels .swiper-slide img {
+      width: 100%;
+      height: auto; }
